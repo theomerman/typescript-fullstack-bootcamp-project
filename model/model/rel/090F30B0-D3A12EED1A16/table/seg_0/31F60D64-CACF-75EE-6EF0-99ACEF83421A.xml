@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31F60D64-CACF-75EE-6EF0-99ACEF83421A" name="Variants">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>3E38A902-5750-8AC0-86A1-18A649B93AD8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="884AA472-6157-73F0-21AA-CFE4A6F61A5C">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>BE914492-AAE0-A1CD-FDA5-77D4BC3FAABD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="B6466E13-14B7-D9BD-F8CE-3FE97A0E3B09">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>FAD4C399-96FC-A1B4-F775-84F1EA82EA15</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="1B87F780-8E5E-0F32-E9D7-987A3446CE68">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>124582F2-2816-0616-01EF-A052B878B6A8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="size" id="F0712210-2B37-5B9A-0C93-D9D5D0452059">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>9E7825A7-CD1A-DA0C-EF5D-08A010956665</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="image" id="86A8D523-8530-2D2A-C565-F05B80C81449">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>98C93671-4301-F005-4222-B242B77DE412</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="AC06DF7C-82F6-3F09-A298-DFD4049ECBDC">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>2D1259FA-C7A7-9DBA-AAD1-BE8C1A1C26B0</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_quantity" id="00C8F8F0-A165-850F-5799-442691ACA3AF">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>6678703B-A1A2-1A21-F632-1FCCBFFD065B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKU" id="76F584EA-CCC7-74F7-E43E-471EE8111DDB">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>C76D0479-531F-6299-3D84-C6F8C9BA6F4B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Product_id" id="13158E07-BD6F-1A0C-DB05-53F9AA139B4B">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>1E6DC90E-7807-8859-4C8C-1FBE030E9493</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF362EFE-4B02-34F1-83B1-61A612B4DCD2" referredColumn="78EADDF3-2AA0-BC95-E572-823DA87BEDEB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E76E9E5-F7BD-041E-FEAE-84F447FAC970" name="Variants_PK">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>A726EA96-63F2-C63B-3DDF-2D420C557DEB</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="884AA472-6157-73F0-21AA-CFE4A6F61A5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A0662A8-CC7E-BE48-3364-AB94E6365F4E" name="Variants_Product_FK">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>D3862987-250F-9DE0-C155-015F891CCAEC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13158E07-BD6F-1A0C-DB05-53F9AA139B4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

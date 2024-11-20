@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D851AC02-DD52-ACE3-9CAD-F5035D38D2BE" name="Relation_1">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Product_id" id="F9943EB3-2C23-EE9B-D2D6-26E6A94494C7">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81F57265-DD6E-C67B-7ECD-29B74B059303" referredColumn="78EADDF3-2AA0-BC95-E572-823DA87BEDEB"/>
+</associations>
+</Column>
+<Column name="Collections_id" id="D1C8FB51-B450-7E91-A556-A843648BD10D">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2147FE8-BCC2-F026-782E-25DE2EA7BCEB" referredColumn="CF29288D-1BC8-A975-B47F-21AAF8144E4A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="545D17C7-FFB9-FEDC-B299-8E9F710C0910" name="Relation_1_PK">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9943EB3-2C23-EE9B-D2D6-26E6A94494C7"/>
+<colUsage columnID="D1C8FB51-B450-7E91-A556-A843648BD10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62A93013-5B79-2971-37D2-B0BC44F45436" name="Relation_1_Product_FK">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>CF895A48-9417-A5EC-A9EA-C6693F5E02EB</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9943EB3-2C23-EE9B-D2D6-26E6A94494C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="660E5F98-251C-76F5-62E2-E1F2DC59FAE2" name="Relation_1_Collections_FK">
+<createdBy>arch</createdBy>
+<createdTime>2024-11-20 16:41:11 UTC</createdTime>
+<generatorID>CF895A48-9417-A5EC-A9EA-C6693F5E02EB</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1C8FB51-B450-7E91-A556-A843648BD10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
