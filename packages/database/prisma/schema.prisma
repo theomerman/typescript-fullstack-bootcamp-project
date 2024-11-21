@@ -13,10 +13,41 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model User {
-    id        String   @id @default(cuid())
-    email     String   @unique
-    name      String?
+model Product {
+    id          Int          @id @default(autoincrement())
+    name        String
+    description String?
+    price       Float
+    SKU         String       @unique
+    category    String
+    stock       Int
+    image       String?
+    createdAt   DateTime     @default(now())
+    updatedAt   DateTime     @updatedAt
+    Variant     Variant[]
+    collection  Collection[]
+}
+
+model Variant {
+    id        Int      @id @default(autoincrement())
+    name      String
+    color     String?
+    size      String?
+    image     String?
+    price     Float
+    stock     Int
+    SKU       String   @unique
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
+    Product   Product? @relation(fields: [productId], references: [id], onDelete: Cascade)
+    productId Int
+}
+
+model Collection {
+    id          Int       @id @default(autoincrement())
+    name        String    @unique
+    description String?
+    createdAt   DateTime  @default(now())
+    status      Boolean   @default(true)
+    products    Product[]
 }
