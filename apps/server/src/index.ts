@@ -1,6 +1,9 @@
 import bodyParser from 'body-parser'
-import express from 'express'
 import cors from 'cors'
+import express from 'express'
+import productsRoute from './routes/productRoute'
+import variantsRoute from './routes/VariantRoutes'
+import collectionRoutes from './routes/CollectionRoutes'
 
 const app = express()
 
@@ -8,12 +11,12 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/', (_, res) => {
-  return res.json({ ok: true })
-})
+app.use('/products', productsRoute)
+app.use('/variants', variantsRoute)
+app.use('/collections', collectionRoutes)
 
 const port = process.env.PORT || 5001
 
 app.listen(port, () => {
-  console.log(`Server API running on http://localhost:${port}`)
+    console.log(`Server API running on http://localhost:${port}`)
 })
