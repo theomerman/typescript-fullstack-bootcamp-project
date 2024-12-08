@@ -2,14 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.main-container {
+    grid-template:
+        'header header header' auto
+        'leftMenu content rightMenu' 1fr;
+}
+.nav-bar {
+    grid-area: header;
+}
+.left-menu {
+    grid-area: leftMenu;
+}
+.right-menu {
+    grid-area: rightMenu;
+}
+.content {
+    grid-area: content;
+}
+
 /* Scale up hit targets on high resolution mobile devices. */
 @media (min-resolution: 200dpi) {
-  html {
-    font-size: 18px;
-  }
+    html {
+        font-size: 18px;
+    }
 
-  .text-sm {
-    /* ensure minimum font size of 16px */
-    font-size: 0.9rem;
-  }
+    .text-sm {
+        /* ensure minimum font size of 16px */
+        font-size: 0.9rem;
+    }
 }
