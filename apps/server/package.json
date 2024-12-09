@@ -10,10 +10,10 @@
         "lint": "eslint ."
     },
     "dependencies": {
+        "@repo/db": "workspace:*",
         "body-parser": "^1.20.2",
         "cors": "^2.8.5",
-        "express": "^4.19.2",
-        "@repo/db": "workspace:*"
+        "express": "^4.19.2"
     },
     "devDependencies": {
         "@repo/eslint-config": "workspace:*",
@@ -23,6 +23,7 @@
         "@types/express": "^4.17.21",
         "eslint": "^8.57.0",
         "eslint-config-prettier": "^9.1.0",
+        "supertest": "^7.0.0",
         "tsx": "^4.17.0",
         "typescript": "^5.3.3"
     }

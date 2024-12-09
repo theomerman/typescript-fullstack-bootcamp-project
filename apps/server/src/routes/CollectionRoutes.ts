@@ -79,5 +79,20 @@ collectionRoutes.delete('/:id', async (req, res) => {
         }
     }
 })
+collectionRoutes.get('/by/:name', async (req, res) => {
+    const collectionController = new CollectionController({
+        name: req.params.name,
+    } as Collection)
+    try {
+        const products = await collectionController.getProductsByCollection()
+        return res.status(200).json(products)
+    } catch (err) {
+        if (err instanceof CustomException) {
+            res.status(err.status).json(err.message)
+        } else {
+            res.status(500).json('Internal server error')
+        }
+    }
+})
 
 export default collectionRoutes

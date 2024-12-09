@@ -3,11 +3,10 @@ import { CustomException } from '../util/CustomException'
 
 export class CollectionService {
     collectionRepository = new PrismaClient().collection
+    productRepository = new PrismaClient().product
     constructor(private collection: Collection) {}
 
     async createCollection() {
-        console.log(this.collection)
-
         return this.collectionRepository
             .create({
                 data: this.collection,
@@ -126,6 +125,30 @@ export class CollectionService {
                     throw new CustomException('Collection not found', 404)
                 }
 
+                throw err
+            })
+    }
+    async getProductsByCollection() {
+        if (this.collection.name === 'All') {
+            return this.productRepository.findMany()
+        }
+        return this.collectionRepository
+            .findUnique({
+                where: {
+                    name: this.collection.name,
+                },
+                include: {
+                    products: true,
+                },
+            })
+            .then((collection) => {
+                if (!collection) {
+                    throw new CustomException('Collection not found', 404)
+                }
+
+                return collection.products
+            })
+            .catch((err) => {
                 throw err
             })
     }

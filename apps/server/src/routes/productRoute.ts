@@ -11,6 +11,8 @@ productsRoute.get('/', async (_, res) => {
         const products = await productController.getAllProducts()
         res.status(200).json(products)
     } catch (err) {
+        console.log(err)
+
         if (err instanceof CustomException) {
             res.status(err.status).json({ message: err.message })
         } else {

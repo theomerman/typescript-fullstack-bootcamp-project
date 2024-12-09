@@ -31,4 +31,7 @@ export class CollectionController {
         }
         return this.collectionService.deleteCollection()
     }
+    getProductsByCollection() {
+        return this.collectionService.getProductsByCollection()
+    }
 }

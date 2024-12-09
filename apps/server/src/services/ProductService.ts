@@ -44,7 +44,10 @@ export class ProductService {
     }
     async getProductById(): Promise<Product> {
         return this.productRepository.product
-            .findFirst({ where: { id: this.product.id } })
+            .findFirst({
+                where: { id: this.product.id },
+                include: { Variant: true },
+            })
             .then((product) => {
                 if (product === null) {
                     throw new CustomException(
@@ -116,8 +119,6 @@ export class ProductService {
                 return product
             })
             .catch((err) => {
-                console.log(err)
-
                 throw err
             })
     }
@@ -152,7 +153,6 @@ export class ProductService {
                         500,
                     )
                 }
-                console.log(err)
 
                 throw err
             })

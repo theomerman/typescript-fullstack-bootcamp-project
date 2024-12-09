@@ -1,22 +1,48 @@
-import { useState } from 'react'
+import { Product } from '@repo/db'
+import { useState, useEffect } from 'react'
+import { NavBar } from './components/navbar/navbar'
+import Products from './components/products/products'
+import { SideMenu } from './components/side-menu/side-menu'
+import SortBy from './components/sort-by/sort-by'
 
+export type templateName = {
+    gridTemplateName: string
+    p: Product[]
+    setFun: (products: Product[]) => void
+}
 function App() {
-  const [counter, setCounter] = useState(0)
+    const [products, setProducts] = useState([] as Product[])
 
-  return (
-    <main className="container flex flex-col gap-8 justify-center items-center min-h-screen p-8 text-center mx-auto">
-      <h1 className="text-5xl md:text-7xl font-bold text-balance max-w-screen-lg">
-        Welcome to the Typescript Fullstack Project!
-      </h1>
-      <p>This is the client starting point 🚀</p>
-      <button
-        className="px-4 py-2 rounded-md bg-blue-600 text-white"
-        onClick={() => setCounter((v) => v + 1)}
-      >
-        Clicks: {counter}
-      </button>
-    </main>
-  )
+    useEffect(() => {
+        fetch('http://localhost:5001/products')
+            .then((res) => res.json())
+            .then((res: Product[]) => setProducts(res))
+    }, [])
+
+    return (
+        <main className="px-3 grid main-container">
+            <NavBar
+                gridTemplateName="nav-bar"
+                p={products}
+                setFun={setProducts}
+            />
+            <SideMenu
+                gridTemplateName="left-menu"
+                p={products}
+                setFun={setProducts}
+            />
+            <Products
+                gridTemplateName="content"
+                p={products}
+                setFun={setProducts}
+            />
+            <SortBy
+                gridTemplateName="right-menu"
+                p={products}
+                setFun={setProducts}
+            />
+        </main>
+    )
 }
 
 export default App

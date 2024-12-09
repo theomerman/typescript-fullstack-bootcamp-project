@@ -33,6 +33,11 @@
         },
         "db:seed": {
             "cache": false
-        }
+        },
+        "test": {},
+        "e2e:run": {
+            "cache": false
+        },
+        "e2e:report": {}
     }
 }
