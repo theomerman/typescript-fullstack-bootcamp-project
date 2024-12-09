@@ -22,7 +22,6 @@ export function ItemCard(props: props) {
             <footer className="flex flex-row flex-nowrap gap-4 border p-2 rounded-3xl w-fit text-xs items-center border-zinc-800">
                 <label className="">{product.name}</label>
                 <button className="bg-blue-600 p-2 rounded-3xl">
-                    {/* ${product.price} USD */}
                     {formatPrice(product.price)} USD
                 </button>
             </footer>
