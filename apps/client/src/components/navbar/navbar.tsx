@@ -9,7 +9,7 @@ export function NavBar(prop: templateName) {
                 <section className="flex flex-row flex-nowrap gap-3 text-sm">
                     <li className="hover:cursor-pointer">ACME STORE</li>
                     <li className="hover:cursor-pointer">All</li>
-                    <li className="hover:cursor-pointer">Shirts</li>
+                    <li className="hover:cursor-pointer">Info</li>
                     <li className="hover:cursor-pointer">Stickers</li>
                 </section>
                 <li>

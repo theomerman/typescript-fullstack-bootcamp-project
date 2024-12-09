@@ -34,6 +34,10 @@
         "db:seed": {
             "cache": false
         },
-        "test": {}
+        "test": {},
+        "e2e:run": {
+            "cache": false
+        },
+        "e2e:report": {}
     }
 }
